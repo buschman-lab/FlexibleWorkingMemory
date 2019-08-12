@@ -61,7 +61,6 @@ class FlexibleWM:
     self.specF['path_for_same_network'] = spec.get('path_for_same_network',self.specF['name_simu']+'/network') # path for the weights
 
     # Stimulation
-    self.specF['number_of_inputs'] = spec.get('number_of_inputs',1) # number of ring-like SN stimulated
     self.specF['specific_load'] = spec.get('specific_load',False) # whether to use a specific load for all trials, or having it random
     self.specF['value_of_specific_load'] = spec.get('value_of_specific_load',1) # value of the load if specific_load is True
     self.specF['start_stimulation'] = spec.get('start_stimulation',0.1)
